@@ -1,0 +1,96 @@
+{
+  "edges": [
+    {
+      "fromNode": "b601447473b2f052",
+      "fromSide": "bottom",
+      "id": "bf0a7a2f6d703926",
+      "styleAttributes": {
+      },
+      "toNode": "98121ca7565b1fda",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "98121ca7565b1fda",
+      "fromSide": "bottom",
+      "id": "6c33c239b3ee831e",
+      "styleAttributes": {
+      },
+      "toNode": "36f21744d6fa5716",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "36f21744d6fa5716",
+      "fromSide": "bottom",
+      "id": "7b1deba12e574adc",
+      "styleAttributes": {
+      },
+      "toNode": "d61d1e0216f3e26e",
+      "toSide": "top"
+    }
+  ],
+  "nodes": [
+    {
+      "height": 400,
+      "id": "4ba3eb8291b4ca65",
+      "label": "Mission",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 400,
+      "x": 100,
+      "y": -1580
+    },
+    {
+      "color": "4",
+      "height": 60,
+      "id": "36f21744d6fa5716",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Physical Architecture",
+      "type": "text",
+      "width": 260,
+      "x": 180,
+      "y": -1350
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "98121ca7565b1fda",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Logical Architecture",
+      "type": "text",
+      "width": 260,
+      "x": 180,
+      "y": -1440
+    },
+    {
+      "color": "4",
+      "height": 60,
+      "id": "d61d1e0216f3e26e",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Implementation Contracts",
+      "type": "text",
+      "width": 260,
+      "x": 180,
+      "y": -1260
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "b601447473b2f052",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "[[Operational Analysis.canvas|Operational Analysis]]",
+      "type": "text",
+      "width": 260,
+      "x": 180,
+      "y": -1540
+    }
+  ]
+}

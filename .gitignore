@@ -1,0 +1,6 @@
+.fuseki
+.gradle
+.idea
+.DS_Store
+build
+workspace.json

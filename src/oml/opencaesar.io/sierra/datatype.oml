@@ -1,0 +1,81 @@
+vocabulary <http://opencaesar.io/sierra/datatype#> as datatype {
+	
+    extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+	extends <http://www.w3.org/2002/07/owl#> as owl
+
+    // Aspects
+
+    aspect TypedElement
+
+    // Concepts
+
+    concept DataType
+
+	concept PrimitiveType < DataType
+
+	concept StructuredType < DataType
+
+    concept Attribute < TypedElement
+
+    // Relations
+
+    relation hasType [
+        from TypedElement
+        to DataType
+        reverse isTypedBy
+        functional
+    ]
+
+    relation hasAttribute [
+        from StructuredType
+        to Attribute
+        reverse isAttributeOf
+        inverse functional
+    ]
+
+    // Properties
+
+    scalar property hasScalar [
+        domain PrimitiveType
+        range xsd:string
+        functional
+    ]
+
+    scalar property hasQuantity [
+        domain PrimitiveType
+        range xsd:string
+        functional
+    ]
+    
+    scalar property hasUnit [
+        domain PrimitiveType
+        range xsd:string
+        functional
+    ]
+
+    scalar property hasDisplayUnit [
+        domain PrimitiveType
+        range xsd:string
+        functional
+    ]
+
+    scalar property hasMinimum [
+        domain PrimitiveType
+        range owl:real
+        functional
+    ]
+
+    scalar property hasMaximum [
+        domain PrimitiveType
+        range owl:real
+        functional
+    ]
+
+    scalar property hasPattern [
+        domain PrimitiveType
+        range xsd:string
+        functional
+    ]
+
+}

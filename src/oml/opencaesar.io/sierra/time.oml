@@ -1,0 +1,66 @@
+vocabulary <http://opencaesar.io/sierra/time#> as time {
+
+    extends <http://www.w3.org/2001/XMLSchema#> as xsd
+    
+    extends <http://www.w3.org/2002/07/owl#> as owl
+
+	extends <http://opencaesar.io/sierra/condition#> as condition
+
+    // Aspect
+
+    aspect ConditionTarget
+
+    // Concepts
+
+    concept Interval < ConditionTarget
+
+    concept Point < ConditionTarget
+
+    scalar IntervalPoint [
+        oneOf "start", "end"
+    ]
+
+    concept Condition < condition:Condition 
+
+    // Relations
+
+    relation hasSource [
+        from Condition
+        to Interval
+        functional
+    ]
+
+    relation hasTarget [
+        from Condition
+        to ConditionTarget
+        functional
+    ]
+
+    // Properties
+
+    scalar property hasSourcePoint [
+        domain Condition
+        range IntervalPoint
+    ]
+
+    scalar property hasTargetPoint [
+        domain Condition
+        range IntervalPoint
+    ]
+
+    scalar property hasLowerBound [
+        domain Condition
+        range owl:real
+    ]
+
+    scalar property hasUpperBound [
+        domain Condition
+        range owl:real
+    ]
+
+    scalar property at [
+        domain Point
+        range xsd:dateTime
+    ]
+
+}

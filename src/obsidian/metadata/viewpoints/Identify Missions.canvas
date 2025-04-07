@@ -1,0 +1,18 @@
+{
+  "edges": [
+  ],
+  "nodes": [
+    {
+      "color": "1",
+      "height": 300,
+      "id": "a11c15f05417f986",
+      "styleAttributes": {
+      },
+      "text": "# Missions Table\n\nIdentify missions:\n```dataview\nTABLE WITHOUT ID file.link as \"Mission\"\nFROM #operation/Mission and \"data\"\n```\n\n`BUTTON[new]`\n\n```meta-bind-button\nlabel: New Mission\nicon: \"\"\nhidden: true\nclass: \"\"\ntooltip: Adds a new Mission\nid: new\nstyle: primary\nactions:\n  - type: templaterCreateNote\n    templateFile: metadata/templates/operation/New Mission.md\n    folderPath: data/operational/missions\n    fileName: New Mission\n    openNote: true\n    openIfAlreadyExists: true\n\n```\n\n",
+      "type": "text",
+      "width": 620,
+      "x": -800,
+      "y": -2180
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "edges": [
+    {
+      "fromNode": "3749cff9272be474",
+      "fromSide": "right",
+      "id": "bef7019fabe7c7f0",
+      "styleAttributes": {
+      },
+      "toNode": "5d2d1b3b9f95a62f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "9e5ff03228e6c383",
+      "fromSide": "top",
+      "id": "175e1d0161e989eb",
+      "styleAttributes": {
+      },
+      "toNode": "bb3e3e868ccad037",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "bb3e3e868ccad037",
+      "fromSide": "right",
+      "id": "d443658c1725a797",
+      "styleAttributes": {
+      },
+      "toNode": "d094c6cf1a1a30fe",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "7dea092c36667c29",
+      "fromSide": "right",
+      "id": "8fe70efe3404b0bf",
+      "styleAttributes": {
+      },
+      "toNode": "c861f6f04454e725",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "c861f6f04454e725",
+      "fromSide": "right",
+      "id": "9464e47aad464267",
+      "styleAttributes": {
+      },
+      "toNode": "57e2185737a68a57",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "9e5ff03228e6c383",
+      "fromSide": "right",
+      "id": "5f6fa92dc7d6bd7f",
+      "styleAttributes": {
+      },
+      "toNode": "7dea092c36667c29",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "9e5ff03228e6c383",
+      "fromSide": "bottom",
+      "id": "d95d800ae07c8a06",
+      "styleAttributes": {
+      },
+      "toNode": "3749cff9272be474",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "5d2d1b3b9f95a62f",
+      "fromSide": "right",
+      "id": "91a03a23f5908110",
+      "styleAttributes": {
+      },
+      "toNode": "743cd7a566530418",
+      "toSide": "left"
+    }
+  ],
+  "nodes": [
+    {
+      "color": "1",
+      "height": 320,
+      "id": "ba026d45a760a34a",
+      "label": "Operational Analysis",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 640,
+      "x": -300,
+      "y": -1980
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "743cd7a566530418",
+      "styleAttributes": {
+      },
+      "text": "Elaborate Scenarios",
+      "type": "text",
+      "width": 130,
+      "x": 180,
+      "y": -1750
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "9e5ff03228e6c383",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "[[Identify Missions.canvas|Identify Missions]]",
+      "type": "text",
+      "width": 100,
+      "x": -280,
+      "y": -1860
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "3749cff9272be474",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Identify Functions",
+      "type": "text",
+      "width": 100,
+      "x": -120,
+      "y": -1750
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "5d2d1b3b9f95a62f",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Identify Data Flows",
+      "type": "text",
+      "width": 110,
+      "x": 25,
+      "y": -1750
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "c861f6f04454e725",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Identify Entities",
+      "type": "text",
+      "width": 100,
+      "x": 35,
+      "y": -1860
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "57e2185737a68a57",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Identify State Variables",
+      "type": "text",
+      "width": 130,
+      "x": 185,
+      "y": -1860
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "7dea092c36667c29",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Identify Datatypes",
+      "type": "text",
+      "width": 100,
+      "x": -115,
+      "y": -1860
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "d094c6cf1a1a30fe",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "[[Identify Scenarios.canvas|Identify Scenarios]]",
+      "type": "text",
+      "width": 100,
+      "x": 35,
+      "y": -1960
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "bb3e3e868ccad037",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "[[Identify Activities.canvas|Identify Activities]]",
+      "type": "text",
+      "width": 100,
+      "x": -120,
+      "y": -1960
+    }
+  ]
+}

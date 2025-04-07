@@ -1,0 +1,46 @@
+vocabulary <http://opencaesar.io/sierra/template#> as template {
+	
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+
+    extends <http://opencaesar.io/sierra/datatype#> as datatype
+
+    // Aspects
+
+	aspect Instance
+
+ 	aspect Definition
+
+    // concepts
+
+    concept Parameter < datatype:TypedElement
+
+    // Relations
+
+    relation hasParameter [
+        from Definition
+        to Parameter
+        reverse isParamaterOf
+    ]
+
+	relation entity Instantiation [
+		from Definition
+		to Instance
+        forward instantiates
+		reverse isInstanceOf
+	]
+
+	relation entity Binding [
+		from Instantiation
+		to Parameter
+        forward binds
+		reverse isBoundBy
+	]
+
+    // Properties
+
+    scalar property toArgument [
+        domain Binding
+        range rdfs:Literal
+    ]
+
+}

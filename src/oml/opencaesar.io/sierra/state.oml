@@ -1,0 +1,60 @@
+vocabulary <http://opencaesar.io/sierra/state#> as state {
+
+    extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+    extends <http://opencaesar.io/sierra/datatype#> as datatype
+
+	extends <http://opencaesar.io/sierra/condition#> as condition
+
+    // Aspects
+
+    aspect StatefulElement
+
+    aspect AffectingElement
+
+    // Concepts
+
+    concept Condition < condition:Condition
+
+    concept Variable < datatype:TypedElement
+
+    // Relations
+
+    relation hasContext [
+        from Condition
+        to StatefulElement
+        reverse isContextFor
+    ]
+
+    relation hasStateVariable [
+        from StatefulElement
+        to Variable
+        reverse isStateVariableOf
+        inverse functional
+    ]
+
+    relation entity Effect [
+        from AffectingElement
+        to Variable
+        forward affects
+        reverse isAffectedBy
+        inverse functional
+    ]
+
+    // Properties
+
+	scalar property hasExpression [
+		domain Condition
+		range xsd:string
+	]
+
+	scalar property isExpressedIn [
+		domain Condition
+		range xsd:string
+	]
+
+    scalar property hasFunction [
+        domain Effect
+        range xsd:string
+    ]
+}

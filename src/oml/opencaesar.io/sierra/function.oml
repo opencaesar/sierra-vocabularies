@@ -1,0 +1,75 @@
+vocabulary <http://opencaesar.io/sierra/function#> as function {
+
+	extends <http://opencaesar.io/sierra/datatype#> as datatype
+
+	extends <http://opencaesar.io/sierra/operation#> as operation
+
+	extends <http://opencaesar.io/sierra/state#> as state
+
+	extends <http://opencaesar.io/sierra/condition#> as condition
+
+	// Aspects
+
+	aspect PerformingElement
+
+	aspect FlowElement
+
+	// Concepts
+
+	concept Function < condition:ConstrainableElement, state:AffectingElement, FlowElement
+
+	concept Pin < FlowElement
+
+	concept InputPin < Pin
+
+	concept OutputPin < Pin
+
+	// Relations
+
+	relation entity Dataflow [
+		from FlowElement
+		to FlowElement
+		forward sendsTo
+		reverse receivesFrom
+	]
+
+	relation transmits [
+		from Dataflow
+		to datatype:DataType
+		reverse isTransmittedBy
+		functional
+	]
+
+	relation implements [
+		from Dataflow
+		to operation:Activity
+		reverse isImplementedBy
+	]
+
+	relation performs [
+		from PerformingElement
+		to Function
+		reverse isPerformedBy
+		inverse functional
+	]
+
+	relation hasPin [
+		from Function
+		to Pin
+		reverse isPinOf
+		inverse functional
+	]
+
+	relation hasInput [
+		from Function
+		to InputPin
+		reverse isInputOf
+	] < hasPin
+
+	relation hasOutput [
+		from Function
+		to OutputPin
+		reverse isOutputOf
+	] < hasPin
+
+}	

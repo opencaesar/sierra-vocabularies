@@ -1,0 +1,3 @@
+:not(.cm-active) > .cm-blockid:not(:hover) {
+    opacity: 0;
+}

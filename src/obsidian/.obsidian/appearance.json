@@ -1,0 +1,8 @@
+{
+  "cssTheme": "Minimal",
+  "theme": "moonstone",
+  "enabledCssSnippets": [
+    "folder_border_fix",
+    "hide_ids"
+  ]
+}

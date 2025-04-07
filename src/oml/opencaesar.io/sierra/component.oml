@@ -1,0 +1,42 @@
+vocabulary <http://opencaesar.io/sierra/component#> as component {
+
+	extends <http://opencaesar.io/sierra/base#> as base
+
+	extends <http://opencaesar.io/sierra/operation#> as operation
+
+	extends <http://opencaesar.io/sierra/function#> as function
+
+	extends <http://opencaesar.io/sierra/state#> as state
+
+	// Aspects
+
+	aspect PresentingElement
+
+	// Concepts
+
+	concept Component < operation:Entity, base:ContainableElement, base:SpecializableElement, function:PerformingElement, state:StatefulElement, PresentingElement [
+		restricts all base:contains to Component
+		restricts all base:isContainedBy to Component
+		restricts all base:specializes to Component
+		restricts all base:isSpecializedBy to Component
+	]
+
+	concept Interface
+
+	// Relations
+
+	relation presents [
+		from PresentingElement
+		to Interface
+		reverse isPresentedBy
+		inverse functional
+	]
+
+	relation entity Connector [
+		from Interface
+		to Interface
+		forward sendsTo
+		reverse receivesFrom
+	]
+
+}

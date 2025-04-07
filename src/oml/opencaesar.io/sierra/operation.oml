@@ -1,0 +1,81 @@
+vocabulary <http://opencaesar.io/sierra/operation#> as operation {
+	
+    extends <http://www.w3.org/2002/07/owl#> as owl
+
+    extends <http://opencaesar.io/sierra/base#> as base
+
+	extends <http://opencaesar.io/sierra/function#> as function
+
+	extends <http://opencaesar.io/sierra/component#> as component
+
+	extends <http://opencaesar.io/sierra/state#> as state
+
+	extends <http://opencaesar.io/sierra/template#> as template
+
+	extends <http://opencaesar.io/sierra/condition#> as condition
+
+	extends <http://opencaesar.io/sierra/time#> as time
+
+    // Aspects
+
+    aspect Entity
+
+   // Concepts
+
+	concept Activity < condition:ConstrainableElement, base:ContainableElement, template:Instance, time:Interval [
+		restricts all base:contains to Activity
+		restricts all base:isContainedBy to Activity
+	]
+    
+ 	concept ActivityTemplate < condition:ConstrainableElement, base:ContainableElement, template:Definition, time:Interval [
+		restricts all base:contains to Activity
+		restricts all base:isContainedBy to owl:Nothing
+	]
+
+   concept Mission < Activity [
+		restricts all base:isContainedBy to owl:Nothing
+    ]
+
+    concept Scenario < condition:ConstrainableElement, time:Interval
+
+	concept Environment < Entity, state:StatefulElement
+
+	concept Actor < Entity, function:PerformingElement, component:PresentingElement
+
+    // Relations
+
+	relation hasDrivingRequirement [
+		from Activity
+		to condition:Condition
+		reverse isDrivingRequirementOf
+		functional
+	]
+
+	relation hasDerivedRequirement [
+		from Activity
+		to condition:Condition
+		reverse isDerivedRequirementOf
+		functional
+	]
+
+	relation hasAssumption [
+		from Activity
+		to condition:Condition
+		reverse isAssumptionOf
+		functional
+	]
+
+	relation involves [
+		from Activity
+		to Entity
+		reverse inInvolvedIn
+	]
+
+	relation analyzes [
+		from Scenario
+		to Activity
+		reverse isAnalyzedBy
+		functional
+	]
+
+}

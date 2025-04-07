@@ -1,0 +1,29 @@
+{
+  "edges": [
+  ],
+  "nodes": [
+    {
+      "color": "1",
+      "height": 560,
+      "id": "a11c15f05417f986",
+      "styleAttributes": {
+      },
+      "text": "# Activities Table\n\nIdentify activities and  set their containers:\n```dataviewjs\nconst {fieldModifier: f} = this.app.plugins.plugins[\"metadata-menu\"].api;\n\ndv.table(['Activity', 'Container'], \n\t dv.pages('#operation/Activity and \"data\"')\n\t\t .sort(p => p.file.name)\n\t\t .map(p => [ p.file.link, \n\t\t\t\t\t f(dv, p, \"isContainedBy\", {options: {\n\t\t\t\t\t   alwaysOn: true, showAddField: true, inFrontmatter: true}}),\n\t\t ])\n\t)\n```\n\n\n`BUTTON[new]`\n\n```meta-bind-button\nlabel: New Activity\nicon: \"\"\nhidden: true\nclass: \"\"\ntooltip: Adds a new Activity\nid: new\nstyle: primary\nactions:\n  - type: templaterCreateNote\n    templateFile: metadata/templates/operation/New Activity.md\n    folderPath: data/operational/activities\n    fileName: New Activity\n    openNote: true\n    openIfAlreadyExists: true\n\n```\n\n",
+      "type": "text",
+      "width": 560,
+      "x": -1040,
+      "y": -2300
+    },
+    {
+      "height": 560,
+      "id": "2df8a855affb9187",
+      "styleAttributes": {
+      },
+      "text": "# Activities Diagram\n```dataviewjs\nvar s = ''\ns += '```plantuml-svg\\n';\ns += 'left to right direction\\n'\nconst activities = dv.pages('(#operation/Activity or #operation/Mission) and \"data\"');\nactivities.forEach(i => {\ns += 'rectangle \"'+i.file.name+'\" as '+i.file.name.replaceAll(\" \", \"_\")+' [[['+i.file.name+']]]\\n'\n});\nactivities.forEach(i => {\nif (i.isContainedBy) {\n\ts += dv.page(i.isContainedBy).file.name.replaceAll(\" \", \"_\") + \" *--> \"+ i.file.name.replaceAll(\" \", \"_\")+'\\n'\n}\n});\ns += '```'\ndv.paragraph(s);\n```\n",
+      "type": "text",
+      "width": 560,
+      "x": -460,
+      "y": -2300
+    }
+  ]
+}
