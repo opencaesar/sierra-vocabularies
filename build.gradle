@@ -49,7 +49,7 @@ oml.dataset.name = dataset_name
  */
 repositories {
 	mavenLocal()
-	oml.repositories.each { maven { url='${it}' } }
+	oml.repositories.each { u -> maven { url= u } }
 }
 
 /*
