@@ -17,21 +17,21 @@ fields:
   options:
     dvQueryString: "dv.pages('#operation/ActivityTemplate and !\"metadata/templates\"')"
   path: ""
-  id: f1624210744
+  id: f-188632742
 - name: isBoundBy
   type: MultiFile
   options:
     dvQueryString: "dv.pages('#template/Instantiation and !\"metadata/templates\"')"
   path: ""
-  id: f785894076
+  id: f-509468181
 - name: hasType
   type: File
   options:
     dvQueryString: "dv.pages('#datatype/DataType or #datatype/PrimitiveType or #datatype/StructuredType and !\"metadata/templates\"')"
   path: ""
-  id: f1119905006
+  id: f696957172
 - name: hasDescription
   type: Input
   path: ""
-  id: f594177885
+  id: f-1825843966
 ---
