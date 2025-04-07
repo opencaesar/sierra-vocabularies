@@ -17,21 +17,21 @@ fields:
   options:
     dvQueryString: "dv.pages('#datatype/Attribute and !\"metadata/templates\"')"
   path: ""
-  id: f1742067114
+  id: f1342950355
 - name: isTypedBy
   type: MultiFile
   options:
-    dvQueryString: "dv.pages('#datatype/Attribute or #template/Parameter or #state/Variable and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#datatype/Attribute or #state/Variable or #template/Parameter and !\"metadata/templates\"')"
   path: ""
-  id: f1424969781
+  id: f610528703
 - name: isTransmittedBy
   type: MultiFile
   options:
     dvQueryString: "dv.pages('#function/Dataflow and !\"metadata/templates\"')"
   path: ""
-  id: f899140474
+  id: f426436927
 - name: hasDescription
   type: Input
   path: ""
-  id: f1582917706
+  id: f594177885
 ---

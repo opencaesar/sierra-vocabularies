@@ -17,27 +17,27 @@ fields:
   options:
     dvQueryString: "dv.pages('#function/Function and !\"metadata/templates\"')"
   path: ""
-  id: f253125436
+  id: f720414287
 - name: isPinOf
   type: File
   options:
     dvQueryString: "dv.pages('#function/Function and !\"metadata/templates\"')"
   path: ""
-  id: f1639481770
+  id: f289931347
 - name: sendsTo
   type: MultiFile
   options:
-    dvQueryString: "dv.pages('#function/Pin or #function/Function or #function/InputPin or #function/OutputPin and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#function/Function or #function/InputPin or #function/OutputPin or #function/Pin and !\"metadata/templates\"')"
   path: ""
-  id: f1755473825
+  id: f585943578
 - name: receivesFrom
   type: MultiFile
   options:
-    dvQueryString: "dv.pages('#function/Pin or #function/Function or #function/InputPin or #function/OutputPin and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#function/Function or #function/InputPin or #function/OutputPin or #function/Pin and !\"metadata/templates\"')"
   path: ""
-  id: f704254362
+  id: f235956917
 - name: hasDescription
   type: Input
   path: ""
-  id: f1582917706
+  id: f594177885
 ---

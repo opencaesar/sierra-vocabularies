@@ -15,53 +15,53 @@ fields:
 - name: hasPin
   type: MultiFile
   options:
-    dvQueryString: "dv.pages('#function/Pin or #function/InputPin or #function/OutputPin and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#function/InputPin or #function/OutputPin or #function/Pin and !\"metadata/templates\"')"
   path: ""
-  id: f847877830
+  id: f400250376
 - name: hasInput
   type: MultiFile
   options:
     dvQueryString: "dv.pages('#function/InputPin and !\"metadata/templates\"')"
   path: ""
-  id: f1016949677
+  id: f136793352
 - name: hasOutput
   type: MultiFile
   options:
     dvQueryString: "dv.pages('#function/OutputPin and !\"metadata/templates\"')"
   path: ""
-  id: f713429527
+  id: f2079030265
 - name: isPerformedBy
   type: File
   options:
     dvQueryString: "dv.pages('#component/Component or #operation/Actor and !\"metadata/templates\"')"
   path: ""
-  id: f1028304654
+  id: f278255674
 - name: hasConstraint
   type: File
   options:
-    dvQueryString: "dv.pages('#state/Condition or #condition/Condition or #time/Condition and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#condition/Condition or #state/Condition or #time/Condition and !\"metadata/templates\"')"
   path: ""
-  id: f2138104681
+  id: f985868983
 - name: affects
   type: MultiFile
   options:
     dvQueryString: "dv.pages('#state/Variable and !\"metadata/templates\"')"
   path: ""
-  id: f544335954
+  id: f381355297
 - name: sendsTo
   type: MultiFile
   options:
-    dvQueryString: "dv.pages('#function/Pin or #function/Function or #function/InputPin or #function/OutputPin and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#function/Function or #function/InputPin or #function/OutputPin or #function/Pin and !\"metadata/templates\"')"
   path: ""
-  id: f1755473825
+  id: f585943578
 - name: receivesFrom
   type: MultiFile
   options:
-    dvQueryString: "dv.pages('#function/Pin or #function/Function or #function/InputPin or #function/OutputPin and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#function/Function or #function/InputPin or #function/OutputPin or #function/Pin and !\"metadata/templates\"')"
   path: ""
-  id: f704254362
+  id: f235956917
 - name: hasDescription
   type: Input
   path: ""
-  id: f1582917706
+  id: f594177885
 ---

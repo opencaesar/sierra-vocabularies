@@ -17,15 +17,15 @@ fields:
   options:
     dvQueryString: "dv.pages('#datatype/StructuredType and !\"metadata/templates\"')"
   path: ""
-  id: f1901607445
+  id: f2131923738
 - name: hasType
   type: File
   options:
-    dvQueryString: "dv.pages('#datatype/StructuredType or #datatype/PrimitiveType or #datatype/DataType and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#datatype/DataType or #datatype/PrimitiveType or #datatype/StructuredType and !\"metadata/templates\"')"
   path: ""
-  id: f1423283015
+  id: f1119905006
 - name: hasDescription
   type: Input
   path: ""
-  id: f1582917706
+  id: f594177885
 ---

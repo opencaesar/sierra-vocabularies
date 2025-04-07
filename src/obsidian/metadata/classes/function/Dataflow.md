@@ -15,29 +15,29 @@ fields:
 - name: transmits
   type: File
   options:
-    dvQueryString: "dv.pages('#datatype/StructuredType or #datatype/PrimitiveType or #datatype/DataType and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#datatype/DataType or #datatype/PrimitiveType or #datatype/StructuredType and !\"metadata/templates\"')"
   path: ""
-  id: f1143515908
+  id: f1629349439
 - name: implements
   type: MultiFile
   options:
-    dvQueryString: "dv.pages('#operation/Mission or #operation/Activity and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#operation/Activity or #operation/Mission and !\"metadata/templates\"')"
   path: ""
-  id: f1285057171
+  id: f346189157
 - name: hasDescription
   type: Input
   path: ""
-  id: f1582917706
+  id: f594177885
 - name: hasSource
   type: MultiFile
   options:
-    dvQueryString: "dv.pages('#function/Pin or #function/Function or #function/InputPin or #function/OutputPin and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#function/Function or #function/InputPin or #function/OutputPin or #function/Pin and !\"metadata/templates\"')"
   path: ""
-  id: f926469854
+  id: f732587200
 - name: hasTarget
   type: MultiFile
   options:
-    dvQueryString: "dv.pages('#function/Pin or #function/Function or #function/InputPin or #function/OutputPin and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#function/Function or #function/InputPin or #function/OutputPin or #function/Pin and !\"metadata/templates\"')"
   path: ""
-  id: f926469855
+  id: f732587201
 ---

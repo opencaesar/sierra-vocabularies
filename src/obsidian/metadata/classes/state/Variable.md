@@ -17,21 +17,21 @@ fields:
   options:
     dvQueryString: "dv.pages('#component/Component or #operation/Environment and !\"metadata/templates\"')"
   path: ""
-  id: f137120313
+  id: f996449689
 - name: isAffectedBy
   type: File
   options:
     dvQueryString: "dv.pages('#function/Function and !\"metadata/templates\"')"
   path: ""
-  id: f1012256555
+  id: f247206780
 - name: hasType
   type: File
   options:
-    dvQueryString: "dv.pages('#datatype/StructuredType or #datatype/PrimitiveType or #datatype/DataType and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#datatype/DataType or #datatype/PrimitiveType or #datatype/StructuredType and !\"metadata/templates\"')"
   path: ""
-  id: f1423283015
+  id: f1119905006
 - name: hasDescription
   type: Input
   path: ""
-  id: f1582917706
+  id: f594177885
 ---

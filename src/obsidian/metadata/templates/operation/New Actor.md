@@ -1,7 +1,7 @@
 ---
 tags:
   - operation/Actor
-inInvolvedIn:
+isInvolvedIn:
 performs:
 presents:
 hasDescription:

@@ -68,7 +68,7 @@ vocabulary <http://opencaesar.io/sierra/operation#> as operation {
 	relation involves [
 		from Activity
 		to Entity
-		reverse inInvolvedIn
+		reverse isInvolvedIn
 	]
 
 	relation analyzes [

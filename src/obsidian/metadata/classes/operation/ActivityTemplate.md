@@ -15,29 +15,29 @@ fields:
 - name: hasConstraint
   type: File
   options:
-    dvQueryString: "dv.pages('#state/Condition or #condition/Condition or #time/Condition and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#condition/Condition or #state/Condition or #time/Condition and !\"metadata/templates\"')"
   path: ""
-  id: f2138104681
+  id: f985868983
 - name: contains
   type: MultiFile
   options:
-    dvQueryString: "dv.pages('#operation/Mission or #operation/Activity and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#operation/Activity or #operation/Mission and !\"metadata/templates\"')"
   path: ""
-  id: f1751535873
+  id: f1325057472
 - name: hasParameter
   type: MultiFile
   options:
     dvQueryString: "dv.pages('#template/Parameter and !\"metadata/templates\"')"
   path: ""
-  id: f1556609176
+  id: f1168211114
 - name: instantiates
   type: MultiFile
   options:
-    dvQueryString: "dv.pages('#operation/Mission or #operation/Activity and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#operation/Activity or #operation/Mission and !\"metadata/templates\"')"
   path: ""
-  id: f2009895080
+  id: f1653945233
 - name: hasDescription
   type: Input
   path: ""
-  id: f1582917706
+  id: f594177885
 ---

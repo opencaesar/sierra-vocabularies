@@ -1,7 +1,7 @@
 ---
 tags:
   - component/Component
-inInvolvedIn:
+isInvolvedIn:
 contains:
 isContainedBy:
 specializes:

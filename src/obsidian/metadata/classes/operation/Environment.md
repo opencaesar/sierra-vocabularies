@@ -12,26 +12,26 @@ savedViews: []
 favoriteView:
 fieldsOrder: []
 fields:
-- name: inInvolvedIn
+- name: isInvolvedIn
   type: MultiFile
   options:
-    dvQueryString: "dv.pages('#operation/Mission or #operation/Activity and !\"metadata/templates\"')"
+    dvQueryString: "dv.pages('#operation/Activity or #operation/Mission and !\"metadata/templates\"')"
   path: ""
-  id: f1023378064
+  id: f489400367
 - name: hasStateVariable
   type: MultiFile
   options:
     dvQueryString: "dv.pages('#state/Variable and !\"metadata/templates\"')"
   path: ""
-  id: f1178292347
+  id: f1088100482
 - name: isContextFor
   type: MultiFile
   options:
     dvQueryString: "dv.pages('#state/Condition and !\"metadata/templates\"')"
   path: ""
-  id: f1259877664
+  id: f1245310086
 - name: hasDescription
   type: Input
   path: ""
-  id: f1582917706
+  id: f594177885
 ---
